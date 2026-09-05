@@ -174,7 +174,7 @@ MIT License - Ver archivo LICENSE
 
 ## 👨‍💻 Autor
 
-**ING-Cristopher**
+**ING-Cristopher Mañon Rosario**
 - GitHub: [@ING-Cristopher](https://github.com/ING-Cristopher)
 - Aprendiendo: Full-Stack Development con C# y React
 
