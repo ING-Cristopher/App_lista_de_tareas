@@ -75,12 +75,12 @@ namespace TodoApp.Infrastructure.Data
                 .HasForeignKey(t => t.IdImportancia)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            //Relacion: Tarea - SubTarea (autorrelacion para la Fase 2)
+            // Relación: Tarea → Subtareas (autorrelación para Fase 2)
             modelBuilder.Entity<Tarea>()
                 .HasMany(t => t.subtarea)
                 .WithOne()
                 .HasForeignKey(t => t.IdTareaPadre)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.NoAction);  // Cambio: NoAction en lugar de Cascade
 
             // Índices para optimizar queries
             modelBuilder.Entity<Tarea>()
